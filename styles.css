@@ -1,0 +1,113 @@
+html,
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin:0;
+    padding:0;
+    min-height: 100vh;
+
+
+}
+
+.budget-tracker{
+    border-collapse: collapse;
+    min-width: 700px; /*optional*/
+    border: 3px solid blueviolet;
+
+}
+
+
+/* '*' targets every element inside budget tracker table*/
+.budget-tracker *{
+    font-family: sans-serif;
+}
+
+.budget-tracker th {
+    text-align: left;
+    padding: 10px 20px;
+    border-bottom: 2px solid blueviolet;
+}
+
+.budget-tracker td {
+    padding: 5px;
+    /* background-color: rgb(138, 49, 223, .1); */
+    background-color: rgb(244, 233, 255)
+    ;
+}
+
+.input,
+.delete-entry{
+    height: 30px;
+    font-size: 13px;
+    padding: 0 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.input {
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+/*when using/editing input feild*/
+.input:focus{
+    border-color: black;
+}
+
+.delete-entry{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    font-weight: 1000;
+    background: none;
+    color: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.delete-entry:hover{
+    background-color: rgb(138, 43, 226, .2);
+}
+
+
+.input-amount{
+    width: 100px;
+}
+
+.new-entry{
+    margin-top: 10px;
+    color: black;
+    border: 2px solid black;
+    background-color: white;
+    font-weight: 500;
+    border-radius: 10%;
+}
+
+.new-entry:hover{
+    background-color: rgba(137, 43, 226, 0.1);
+}
+
+.controls,
+.summary{
+    text-align: right;
+}
+
+footer{
+    margin-top: auto;
+    bottom: 0;
+    width: 100vw;
+    height: 30px;
+    font-size: 15px;
+    background-color: rgba(137, 43, 226, 0.199);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
