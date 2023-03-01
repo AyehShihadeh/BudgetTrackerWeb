@@ -13,7 +13,7 @@ body{
 
 .budget-tracker{
     border-collapse: collapse;
-    min-width: 700px; /*optional*/
+    min-width: 590px; /*optional*/
     border: 3px solid blueviolet;
 
 }
